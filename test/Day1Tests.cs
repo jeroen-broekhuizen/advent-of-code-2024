@@ -1,4 +1,4 @@
-﻿using advent_of_code_2024.Day1;
+﻿using advent_of_code_2024;
 using FluentAssertions;
 
 namespace test;
