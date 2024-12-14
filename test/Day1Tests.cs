@@ -25,7 +25,7 @@ public class Day1Tests
     [Fact]
     public void Input1()
     {
-        Day1.ProcessPart1(File.ReadAllText("Day1/input.txt"))
+        Day1.ProcessPart1(File.ReadAllText("inputs/day1.txt"))
             .Should().Be(3508942);
     }
 
@@ -48,7 +48,7 @@ public class Day1Tests
     [Fact]
     public void Input2()
     {
-        Day1.ProcessPart2(File.ReadAllText("Day1/input.txt"))
+        Day1.ProcessPart2(File.ReadAllText("inputs/day1.txt"))
             .Should().Be(26593248);
     }
 }
