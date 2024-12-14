@@ -6,27 +6,15 @@ public static class Day2
 {
     public static int ProcessPart1(ReadOnlySpan<char> input)
     {
-        return RunForEachLine(input, Part1);
+        return Generic.RunForEachLine(input, Part1);
     }
     
     public static int ProcessPart1V2(ReadOnlySpan<char> input)
     {
-        return RunForEachLine(input, Part1V2);
+        return Generic.RunForEachLine(input, Part1V2);
     }
 
-    private static int RunForEachLine(ReadOnlySpan<char> input, Func<ReadOnlySpan<char>, int> method)
-    {
-        var result = 0;
-        var split = input.Split('\n');
-        foreach (var range in split)
-        {
-            var line = input[range];
-
-            result += method(line);
-        }
-
-        return result;
-    }
+ 
 
     private static int Part1(ReadOnlySpan<char> line)
     {
@@ -174,6 +162,6 @@ public static class Day2
 
     public static int ProcessPart2(ReadOnlySpan<char> input)
     {
-        return RunForEachLine(input, Part2);
+        return Generic.RunForEachLine(input, Part2);
     }
 }
